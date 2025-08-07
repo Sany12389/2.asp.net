@@ -15,9 +15,3 @@ global using global::System.Net.Http;
 global using global::System.Net.Http.Json;
 global using global::System.Threading;
 global using global::System.Threading.Tasks;
-
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Database=app_tarefas;User Id=Sandyla;Password=1531;"
-  }
-}
