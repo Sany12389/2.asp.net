@@ -2187,6 +2187,23 @@
           }
         }
       },
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design/8.0.7": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.DotNet.Scaffolding.Shared": "8.0.7",
+          "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "8.0.7"
+        },
+        "compile": {
+          "lib/net8.0/dotnet-aspnet-codegenerator-design.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/dotnet-aspnet-codegenerator-design.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/8.0.7": {
         "type": "package",
         "dependencies": {
@@ -6911,6 +6928,22 @@
         "microsoft.visualstudio.web.codegeneration.core.nuspec"
       ]
     },
+    "Microsoft.VisualStudio.Web.CodeGeneration.Design/8.0.7": {
+      "sha512": "qURp+VCwreGNQBofL6z3uUnLmrG3PCap/jN/B8jGqsiMLjhR+FOO7r9R1vcNeXYd5cFORpQvsuZi6GWXxr2dCA==",
+      "type": "package",
+      "path": "microsoft.visualstudio.web.codegeneration.design/8.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "NOTICE.txt",
+        "README.md",
+        "lib/net8.0/dotnet-aspnet-codegenerator-design.dll",
+        "lib/net8.0/dotnet-aspnet-codegenerator-design.xml",
+        "microsoft.visualstudio.web.codegeneration.design.8.0.7.nupkg.sha512",
+        "microsoft.visualstudio.web.codegeneration.design.nuspec"
+      ]
+    },
     "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/8.0.7": {
       "sha512": "Cd37PMogJ7sbzbUkbZsqPOLpKg0xbBLypsGuJ8HLX7caTDSg2NIsNT/MJKu0VybfoQ2L4fli8XpJXxVytbx1wA==",
       "type": "package",
@@ -9156,6 +9189,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.19",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.19",
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.7",
       "Microsoft.VisualStudio.Web.CodeGenerators.Mvc >= 8.0.7",
       "Pomelo.EntityFrameworkCore.MySql >= 8.0.3",
       "Savvyio.Extensions.DependencyInjection.EFCore.Domain >= 4.1.1"
@@ -9238,6 +9272,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.19, )"
+          },
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "[8.0.7, )"
           },
           "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
             "target": "Package",

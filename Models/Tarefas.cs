@@ -30,5 +30,4 @@ public class Tarefas
     
     public Tarefas() { DataCriacao = DateTime.Now; }
 
-    public List<Tarefa> Tarefas { get; set; } = new List<Tarefa>();
 }

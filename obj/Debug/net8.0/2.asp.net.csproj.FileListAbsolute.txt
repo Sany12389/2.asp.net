@@ -312,3 +312,4 @@ C:\Users\Aluno\Documents\ligth\SSZ\2.asp.net\obj\Debug\net8.0\refint\2.asp.net.d
 C:\Users\Aluno\Documents\ligth\SSZ\2.asp.net\obj\Debug\net8.0\2.asp.net.pdb
 C:\Users\Aluno\Documents\ligth\SSZ\2.asp.net\obj\Debug\net8.0\2.asp.net.genruntimeconfig.cache
 C:\Users\Aluno\Documents\ligth\SSZ\2.asp.net\obj\Debug\net8.0\ref\2.asp.net.dll
+C:\Users\Aluno\Documents\ligth\SSZ\2.asp.net\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
