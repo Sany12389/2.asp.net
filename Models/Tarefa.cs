@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 namespace app_tarefas.Models;
 
-public class Tarefas
+public class Tarefa
 {
     [Key]
     public int Id { get; set; }
@@ -28,6 +28,6 @@ public class Tarefas
     public Tipo Tipo { get; set; }
     public bool Concluida { get; set; } = false;
     
-    public Tarefas() { DataCriacao = DateTime.Now; }
+    public Tarefa() { DataCriacao = DateTime.Now; }
 
 }

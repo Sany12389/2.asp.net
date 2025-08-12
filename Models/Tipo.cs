@@ -15,4 +15,6 @@ public class Tipo
     [MinLength(2, ErrorMessage = "O campo Nome deve ter no mínimo 2 caracteres.")]
     [MaxLength(100, ErrorMessage = "O campo Nome deve ter no máximo 100 caracteres.")]
     public string Descricao { get; set; } = null!;
+
+    Public IColltion<Tarefa> Tarefas { get; set; } = new List<Lista>();
 }
