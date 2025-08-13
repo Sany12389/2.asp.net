@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno\\Documents\\ligth\\SSZ\\2.asp.net\\2.asp.net.csproj": {}
+    "C:\\Users\\mrsantos\\OneDrive - Sistema FIEMG\\Documentos\\Teste_alunos\\Sandyla\\2.asp.net\\2.asp.net.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\Documents\\ligth\\SSZ\\2.asp.net\\2.asp.net.csproj": {
+    "C:\\Users\\mrsantos\\OneDrive - Sistema FIEMG\\Documentos\\Teste_alunos\\Sandyla\\2.asp.net\\2.asp.net.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Documents\\ligth\\SSZ\\2.asp.net\\2.asp.net.csproj",
+        "projectUniqueName": "C:\\Users\\mrsantos\\OneDrive - Sistema FIEMG\\Documentos\\Teste_alunos\\Sandyla\\2.asp.net\\2.asp.net.csproj",
         "projectName": "2.asp.net",
-        "projectPath": "C:\\Users\\Aluno\\Documents\\ligth\\SSZ\\2.asp.net\\2.asp.net.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Documents\\ligth\\SSZ\\2.asp.net\\obj\\",
+        "projectPath": "C:\\Users\\mrsantos\\OneDrive - Sistema FIEMG\\Documentos\\Teste_alunos\\Sandyla\\2.asp.net\\2.asp.net.csproj",
+        "packagesPath": "C:\\Users\\mrsantos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mrsantos\\OneDrive - Sistema FIEMG\\Documentos\\Teste_alunos\\Sandyla\\2.asp.net\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\mrsantos\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -115,7 +115,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

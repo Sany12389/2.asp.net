@@ -1,5 +1,6 @@
 
 using System.ComponentModel.DataAnnotations;
+using app_tarefas.Models;
 
 public class Tipo
 {
@@ -16,5 +17,5 @@ public class Tipo
     [MaxLength(100, ErrorMessage = "O campo Nome deve ter no máximo 100 caracteres.")]
     public string Descricao { get; set; } = null!;
 
-    Public IColltion<Tarefa> Tarefas { get; set; } = new List<Lista>();
+    public ICollection<Tarefa> Tarefas { get; set; } = new List<Tarefa>();
 }
