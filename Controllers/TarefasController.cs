@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _2.asp.net.Data;
+using _2.asp.net.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using _2.asp.net.Data;
-using app_tarefas.Models;
 
 namespace _2.asp.net.Controllers
 {
@@ -34,8 +34,8 @@ namespace _2.asp.net.Controllers
                 return NotFound();
             }
 
-            var tarefa = await _context.Tarefa
-                .Include(t => t.Tipo)
+            var tarefa = await _context
+                .Tarefa.Include(t => t.Tipo)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (tarefa == null)
             {
@@ -48,7 +48,7 @@ namespace _2.asp.net.Controllers
         // GET: Tarefas/Create
         public IActionResult Create()
         {
-            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Descricao");
+            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Nome");
             return View();
         }
 
@@ -57,15 +57,18 @@ namespace _2.asp.net.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Descricao,DataCriacao,DataConclusao,TipoId,Concluida")] Tarefa tarefa)
+        public async Task<IActionResult> Create(
+            [Bind("Id,Nome,Descricao,DataCriacao,DataConclusao,TipoId,Concluida")] Tarefa tarefa
+        )
         {
             if (ModelState.IsValid)
             {
+                tarefa.DataCriacao = DateTime.Now;
                 _context.Add(tarefa);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Descricao", tarefa.TipoId);
+            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Nome", tarefa.TipoId);
             return View(tarefa);
         }
 
@@ -82,7 +85,7 @@ namespace _2.asp.net.Controllers
             {
                 return NotFound();
             }
-            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Descricao", tarefa.TipoId);
+            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Nome", tarefa.TipoId);
             return View(tarefa);
         }
 
@@ -91,7 +94,10 @@ namespace _2.asp.net.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Descricao,DataCriacao,DataConclusao,TipoId,Concluida")] Tarefa tarefa)
+        public async Task<IActionResult> Edit(
+            int id,
+            [Bind("Id,Nome,Descricao,DataCriacao,DataConclusao,TipoId,Concluida")] Tarefa tarefa
+        )
         {
             if (id != tarefa.Id)
             {
@@ -118,7 +124,7 @@ namespace _2.asp.net.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Descricao", tarefa.TipoId);
+            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Nome", tarefa.TipoId);
             return View(tarefa);
         }
 
@@ -130,8 +136,8 @@ namespace _2.asp.net.Controllers
                 return NotFound();
             }
 
-            var tarefa = await _context.Tarefa
-                .Include(t => t.Tipo)
+            var tarefa = await _context
+                .Tarefa.Include(t => t.Tipo)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (tarefa == null)
             {

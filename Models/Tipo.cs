@@ -1,6 +1,6 @@
-
 using System.ComponentModel.DataAnnotations;
-using app_tarefas.Models;
+
+namespace _2.asp.net.Models;
 
 public class Tipo
 {

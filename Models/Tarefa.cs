@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
-namespace app_tarefas.Models;
+
+namespace _2.asp.net.Models;
 
 public class Tarefa
 {
@@ -24,10 +25,14 @@ public class Tarefa
     [Display(Name = "Data de Conclusão")]
     public DateTime? DataConclusao { get; set; }
 
+    [Required(ErrorMessage = "O campo Tipo é obrigatório.")]
     public int TipoId { get; set; }
-    public Tipo Tipo { get; set; }
-    public bool Concluida { get; set; } = false;
-    
-    public Tarefa() { DataCriacao = DateTime.Now; }
+    public Tipo? Tipo { get; set; }
+    public bool Concluida { get; set; }
 
+    public Tarefa()
+    {
+        DataCriacao = DateTime.Now;
+        Concluida = false;
+    }
 }

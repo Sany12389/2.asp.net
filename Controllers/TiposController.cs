@@ -2,10 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _2.asp.net.Data;
+using _2.asp.net.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using _2.asp.net.Data;
 
 namespace _2.asp.net.Controllers
 {
@@ -32,8 +33,7 @@ namespace _2.asp.net.Controllers
                 return NotFound();
             }
 
-            var tipo = await _context.Tipos
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var tipo = await _context.Tipos.FirstOrDefaultAsync(m => m.Id == id);
             if (tipo == null)
             {
                 return NotFound();
@@ -123,8 +123,7 @@ namespace _2.asp.net.Controllers
                 return NotFound();
             }
 
-            var tipo = await _context.Tipos
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var tipo = await _context.Tipos.FirstOrDefaultAsync(m => m.Id == id);
             if (tipo == null)
             {
                 return NotFound();
