@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/_2.asp.net.styles.css" asp-append-version="true" />
 </head>
 <body>
+    <div style="background-color: #001f3f; min-height: 100vh; min-width: 100vw; color: white;">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -45,12 +46,13 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - _2.asp.net - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025 - _2.asp.net - <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color: white;">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+</div>
 </body>
 </html>

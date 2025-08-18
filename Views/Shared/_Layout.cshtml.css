@@ -1,4 +1,17 @@
-﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+﻿body {
+  background-color: #001f3f !important;
+  color: white !important;
+}
+
+.container, .navbar, .footer, .card, .table {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+label, h1, h2, h3, h4, h5, h6, p, a, span, th, td, div {
+  color: white !important;
+}
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {

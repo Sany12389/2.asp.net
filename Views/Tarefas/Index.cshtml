@@ -4,30 +4,31 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div style="background-color: #001f3f; min-height: 100vh; color: white; padding: 30px;">
+<h1 style="color: white;">Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-light" style="color: #001f3f;">Create New</a>
 </p>
-<table class="table">
+<table class="table border border-primary-subtle" style="color: white;">
     <thead>
         <tr>
-            <th>
+            <th style="color: white;">
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
-            <th>
+            <th style="color: white;">
                 @Html.DisplayNameFor(model => model.Descricao)
             </th>
-            <th>
+            <th style="color: white;">
                 @Html.DisplayNameFor(model => model.DataCriacao)
             </th>
-            <th>
+            <th style="color: white;">
                 @Html.DisplayNameFor(model => model.DataConclusao)
             </th>
-            <th>
+            <th style="color: white;">
                 @Html.DisplayNameFor(model => model.Tipo)
             </th>
-            <th>
+            <th style="color: white;">
                 @Html.DisplayNameFor(model => model.Concluida)
             </th>
             <th></th>
@@ -36,30 +37,32 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
+            <td style="color: white;">
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
-            <td>
+            <td style="color: white;">
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>
-            <td>
+            <td style="color: white;">
                 @item.DataCriacao.ToString("dd/MM/yyyy HH:mm")
             </td>
-            <td>
+            <td style="color: white;">
                 @item.DataConclusao?.ToString("dd/MM/yyyy HH:mm")
             </td>
-            <td>
+            <td style="color: white;">
                 @Html.DisplayFor(modelItem => item.Tipo.Descricao)
             </td>
-            <td>
+            <td style="color: white;">
                 @Html.DisplayFor(modelItem => item.Concluida)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" style="color: white;">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id" style="color: white;">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" style="color: white;">Delete</a>
             </td>
         </tr>
 }
     </tbody>
+
 </table>
+</div>

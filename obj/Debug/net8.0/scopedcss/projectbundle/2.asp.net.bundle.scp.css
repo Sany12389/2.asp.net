@@ -1,4 +1,17 @@
 /* _content/2.asp.net/Views/Shared/_Layout.cshtml.rz.scp.css */
+body[b-jsgf1mdw1m] {
+  background-color: #001f3f !important;
+  color: white !important;
+}
+
+.container[b-jsgf1mdw1m], .navbar[b-jsgf1mdw1m], .footer[b-jsgf1mdw1m], .card[b-jsgf1mdw1m], .table[b-jsgf1mdw1m] {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+label[b-jsgf1mdw1m], h1[b-jsgf1mdw1m], h2[b-jsgf1mdw1m], h3[b-jsgf1mdw1m], h4[b-jsgf1mdw1m], h5[b-jsgf1mdw1m], h6[b-jsgf1mdw1m], p[b-jsgf1mdw1m], a[b-jsgf1mdw1m], span[b-jsgf1mdw1m], th[b-jsgf1mdw1m], td[b-jsgf1mdw1m], div[b-jsgf1mdw1m] {
+  color: white !important;
+}
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 

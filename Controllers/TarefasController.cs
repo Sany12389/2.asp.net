@@ -48,7 +48,7 @@ namespace _2.asp.net.Controllers
         // GET: Tarefas/Create
         public IActionResult Create()
         {
-            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Descricao");
+            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Nome");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace _2.asp.net.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Descricao", tarefa.TipoId);
+            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Nome", tarefa.TipoId);
             return View(tarefa);
         }
 
@@ -82,7 +82,7 @@ namespace _2.asp.net.Controllers
             {
                 return NotFound();
             }
-            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Descricao", tarefa.TipoId);
+            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Nome", tarefa.TipoId);
             return View(tarefa);
         }
 
@@ -118,7 +118,7 @@ namespace _2.asp.net.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Descricao", tarefa.TipoId);
+            ViewData["TipoId"] = new SelectList(_context.Tipos, "Id", "Nome", tarefa.TipoId);
             return View(tarefa);
         }
 
